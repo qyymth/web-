@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>技术博客</span>
+                </h1>
+                <button class="theme-toggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于我</a>
+                <a href="#blog" class="nav-link">博客</a>
+                <a href="#contact" class="nav-link">联系我</a>
+            </div>
+            <button class="menu-toggle" aria-label="切换菜单">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>欢迎来到我的技术博客</h2>
+                    <p>分享编程心得、技术干货和生活感悟</p>
+                    <a href="#blog" class="btn">开始阅读</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <div class="profile-img">
+                        <img src="230511326常远航.jpg" alt="常远航">
+                    </div>
+                    <div class="profile-info">
+                        <h3>常远航</h3>
+                        <p>长春理工大学计算机专业大三学生</p>
+                        <p>热爱编程，专注于Web开发领域。喜欢探索新技术，乐于分享学习心得。</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                            <a href="#" aria-label="邮箱"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">博客文章</h2>
+                
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">全部</button>
+                    <button class="filter-btn" data-category="前端">前端开发</button>
+                    <button class="filter-btn" data-category="后端">后端开发</button>
+                    <button class="filter-btn" data-category="生活">生活随笔</button>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card" data-category="前端">
+                        <div class="blog-img">
+                            <img src="blog1.jpg" alt="CSS Flexbox布局">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">前端开发</span>
+                            <h3>深入理解CSS Flexbox布局</h3>
+                            <p>Flexbox是CSS3中非常强大的布局方式，本文将深入讲解Flexbox的核心概念和使用技巧...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-15</span>
+                                <span><i class="fas fa-comment"></i> 12</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="后端">
+                        <div class="blog-img">
+                            <img src="blog2.jpg" alt="Node.js后端开发">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">后端开发</span>
+                            <h3>Node.js异步编程详解</h3>
+                            <p>Node.js的异步编程模型是其核心特性之一，本文详细介绍Promise、async/await等异步处理方式...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-12</span>
+                                <span><i class="fas fa-comment"></i> 8</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="前端">
+                        <div class="blog-img">
+                            <img src="blog3.jpg" alt="React Hooks">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">前端开发</span>
+                            <h3>React Hooks最佳实践</h3>
+                            <p>React Hooks改变了我们编写React组件的方式，本文总结了使用Hooks的最佳实践和常见陷阱...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-10</span>
+                                <span><i class="fas fa-comment"></i> 15</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="生活">
+                        <div class="blog-img">
+                            <img src="blog4.jpg" alt="大学生活">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">生活随笔</span>
+                            <h3>大三学习心得与规划</h3>
+                            <p>回顾大三上学期的学习经历，分享一些学习心得和未来的规划...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-08</span>
+                                <span><i class="fas fa-comment"></i> 20</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="后端">
+                        <div class="blog-img">
+                            <img src="blog5.jpg" alt="RESTful API">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">后端开发</span>
+                            <h3>RESTful API设计原则</h3>
+                            <p>良好的API设计是构建高质量Web服务的关键，本文介绍RESTful API的设计原则和最佳实践...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-05</span>
+                                <span><i class="fas fa-comment"></i> 18</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="前端">
+                        <div class="blog-img">
+                            <img src="blog6.jpg" alt="响应式设计">
+                        </div>
+                        <div class="blog-content">
+                            <span class="category-tag">前端开发</span>
+                            <h3>响应式设计实战指南</h3>
+                            <p>响应式设计是现代Web开发的必备技能，本文通过实战案例讲解响应式设计的实现方法...</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> 2024-01-03</span>
+                                <span><i class="fas fa-comment"></i> 25</span>
+                            </div>
+                            <a href="#" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">评论区</h2>
+                <div class="comments-section">
+                    <form class="comment-form" id="commentForm">
+                        <div class="form-group">
+                            <label for="name">昵称</label>
+                            <input type="text" id="name" name="name" placeholder="请输入您的昵称">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="content">评论内容</label>
+                            <textarea id="content" name="content" rows="4" placeholder="请输入评论内容"></textarea>
+                            <span class="error-message" id="contentError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">提交评论</button>
+                    </form>
+
+                    <div class="comments-list">
+                        <h3>最新评论</h3>
+                        <div class="comment-item">
+                            <div class="comment-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <span class="comment-name">小明</span>
+                                    <span class="comment-time">2024-01-15 14:30</span>
+                                </div>
+                                <p>文章写得很棒，收获很多！</p>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <span class="comment-name">小红</span>
+                                    <span class="comment-time">2024-01-14 20:15</span>
+                                </div>
+                                <p>期待更多精彩内容！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 我的个人博客 | 长春理工大学计算机学院</p>
+            <div class="footer-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于我</a>
+                <a href="#blog">博客</a>
+                <a href="#contact">联系我</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
